@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ModifyActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#66BB">
+        <Button
+            android:id="@+id/button_modify_return"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="返回"/>
+        <EditText
+            android:id="@+id/editText_modify_by_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxLength="9"
+            android:hint="请输入要修改职工的编号"
+            android:textColorHint="#999999"
+            android:background="@drawable/shape_round_rectangle"/>
+        <Button
+            android:id="@+id/button_modify_by_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="修改"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listView_all_worker3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>
